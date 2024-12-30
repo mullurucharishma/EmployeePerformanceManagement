@@ -5,7 +5,6 @@ This project implements a system for managing employee performance, including:
 - Suggesting adjustments to employee ratings based on deviations.
 #Setup Instructions
 **1. Clone the Repository**
-```bash
 git clone https://github.com/<your-username>/employee-performance-management.git
 cd employee-performance-management
 **2. Prerequisites**
@@ -41,8 +40,8 @@ The server will start at http://localhost:8080.
 #Performance Management
 **Method	Endpoint	Description**
 POST	/employees	Add a new employee.
-GET	/employees/bell-curve	Get bell curve data.
-GET	/employees/suggestions	Get suggested adjustments.
-GET /employees/actual-percentages
+GET	    /employees/bell-curve	Get bell curve data.
+GET	    /employees/suggestions	Get suggested adjustments.
+GET     /employees/actual-percentages
 
 
