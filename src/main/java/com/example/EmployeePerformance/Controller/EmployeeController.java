@@ -19,7 +19,10 @@ public class EmployeeController {
     @Autowired
     private RatingService ratingService;
 
-
+    @PostMapping("/categories")
+    public RatingCategory addCategory(@RequestBody RatingCategory ratingCategory) {
+        return ratingService.addCategory(ratingCategory);
+    }
     @GetMapping
     public List<Employee> getAllEmployees() {
         return employeeService.getAllEmployees();

@@ -19,6 +19,10 @@ public class RatingService {
     @Autowired
     private RatingCategoryRepository ratingCategoryRepository;
 
+    public RatingCategory addCategory(RatingCategory ratingCategory) {
+        return ratingCategoryRepository.save(ratingCategory);
+    }
+
     public List<RatingCategory> calculateActualPercentages() {
         List<RatingCategory> categories = ratingCategoryRepository.findAll();
         List<Employee> employees = employeeRepository.findAll();
