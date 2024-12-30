@@ -40,6 +40,7 @@ The server will start at http://localhost:8080.
 #Performance Management
 **Method	Endpoint	Description**
 POST	/employees	Add a new employee.
+POST    /employees/categories
 GET	    /employees/bell-curve	Get bell curve data.
 GET	    /employees/suggestions	Get suggested adjustments.
 GET     /employees/actual-percentages
